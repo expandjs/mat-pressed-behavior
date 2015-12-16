@@ -78,7 +78,7 @@ A behavior used to simulate a [Material Design ripple effect](http://www.google.
             requestAnimationFrame(function () {
 
                 // Styling
-                wave.style.transform = wave.style.webkitTransform = 'translate(' + data.dx + 'px, ' + data.dy + 'px) scale(1)';
+                wave.style.transform = 'translate(' + data.dx + 'px, ' + data.dy + 'px) scale(1)';
 
                 // Smoothing
                 if (!self.pressed) { self._smooth(); }

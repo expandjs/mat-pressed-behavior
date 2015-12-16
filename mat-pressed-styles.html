@@ -45,7 +45,6 @@ A stylesheet used to stylize a [Material Design ripple effect](http://www.google
                 border-radius: inherit;
                 opacity: 0;
                 pointer-events: none !important;
-                -webkit-transition: opacity 0.8s;
                 transition: opacity 0.8s;
             }
 
@@ -62,7 +61,6 @@ A stylesheet used to stylize a [Material Design ripple effect](http://www.google
 
             :host .ripple-waves.rippling,
             :host .ripple-waves[active] {
-                -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
             }
 
@@ -71,9 +69,7 @@ A stylesheet used to stylize a [Material Design ripple effect](http://www.google
                 border-radius: 50%;
                 opacity: 0.20;
                 position: absolute;
-                -webkit-transform: translate(0, 0) scale(0);
                 transform: translate(0, 0) scale(0);
-                -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
                 transition: opacity 0.5s, transform 0.5s;
             }
 
@@ -83,9 +79,7 @@ A stylesheet used to stylize a [Material Design ripple effect](http://www.google
 
             :host .ripple-waves .smoothing {
                 opacity: 0 !important;
-                -webkit-transform: scale(1);
                 transform: scale(1);
-                -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
                 transition: opacity 0.5s, transform 0.5s;
             }
         </style>
